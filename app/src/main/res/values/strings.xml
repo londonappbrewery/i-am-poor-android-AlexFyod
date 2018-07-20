@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">I Am Poor</string>
+    <string name="cause">I Am Poor</string>
+    <string name="consequence">and I can afford Windows 95 only :(</string>
+    <string name="button_description">Even this button is just a picture… -></string>
+    <string name="coal_picture_description">A picture of a piece of coal</string>
+    <string name="win95_close_button_picture_description">A "Close" button taken from Windows 95</string>
+
 </resources>

@@ -1,12 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C0C0C0"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
+    <ImageView
+        android:id="@+id/CoalTheSymbolOfPoverty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Cause"
+        android:layout_centerHorizontal="true"
+        android:background="#008180"
+        app:srcCompat="@drawable/coal"
+        android:contentDescription="@string/coal_picture_description" />
+
+    <TextView
+        android:id="@+id/Cause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Consequence"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cause"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/Consequence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="@string/consequence"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ButtonDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CloseButton"
+        android:layout_marginBottom="-18dp"
+        android:text="@string/button_description"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/CloseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Cause"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/win95_close_button"
+        android:layout_alignRight="@+id/Cause"
+        tools:ignore="RtlCompat"
+        android:contentDescription="@string/win95_close_button_picture_description" />
 </RelativeLayout>
